@@ -11,7 +11,7 @@ $collection = $client->test->col3;
 $poste=$_POST['poste'];
 
 // $date = "1996-12-18";
-echo $poste;
+// echo $poste;
 // echo Age($date);
 
  $searchQuery = array('NAME_CONTRACT_TYPE' =>  $poste);
@@ -53,18 +53,18 @@ echo $poste;
 </head>
 <body >
 	<nav class="navbar navbar-light bg-light">
-	  <a class="navbar-brand" href="index.html">
-	    <img src="football.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-	    TSE foot
+	  <a class="navbar-brand" href="index.php">
+	    <img src="tse.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
+	    TSE immo
 	  </a>
-		<form class="form-inline my-2 my-lg-0" method="post" action="search_players.php">
+		<form class="form-inline my-2 my-lg-0" method="post" action="search.php">
 			<select class="custom-select form-control mr-sm-1 " name="poste">
-			  	<option selected>post</option>
-				<option value="milieu">milieu</option>
-				<option value="défence">défence</option>
-				<option value="attaque">attaque</option>
+			  	<option selected>contract type</option>
+				<option value="Cash loans">Cash loans</option>
+				<option value="Revolving loans">Revolving loans</option>
+				<option value="attaque">not exist</option>
 			</select>
-			<input class="form-control mr-sm-1" type="text" placeholder="age max" name="age" required>
+			<input class="form-control mr-sm-1" disabled="true" type="text" placeholder="age max" name="age" >
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
 	</nav>

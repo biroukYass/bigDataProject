@@ -19,14 +19,14 @@
 	    <img src="tse.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
 	    TSE immo
 	  </a>
-		<form class="form-inline my-2 my-lg-0" method="post" action="search_players.php">
+		<form class="form-inline my-2 my-lg-0" method="post" action="search.php">
 			<select class="custom-select form-control mr-sm-1 " name="poste">
 			  	<option selected>contract type</option>
 				<option value="Cash loans">Cash loans</option>
 				<option value="Revolving loans">Revolving loans</option>
-				<option value="attaque">attaque</option>
+				<option value="attaque">not exist</option>
 			</select>
-			<input class="form-control mr-sm-1" type="text" placeholder="age max" name="age" >
+			<input class="form-control mr-sm-1" disabled="true" type="text" placeholder="age max" name="age" >
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
 	</nav>
@@ -43,21 +43,6 @@
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>    
-<script type="text/javascript">
-$(function() {   
-    //autocomplete
-    $(".auto").autocomplete({
-        source: "search_team_autocomplete.php",
-        minLength: 1
-    });
-    $(".autoj").autocomplete({
-        source: "search_player_autocomplete.php",
-        minLength: 1
-    });    
-});
-
-
-</script>
 
 <!-- ************************** -->
 <!-- Footer -->
