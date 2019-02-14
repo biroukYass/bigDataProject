@@ -31,38 +31,12 @@
 		</form>
 	</nav>
 
-	<br><br>
 	<div class="container">
 		
 		<hr size="30">
-		<!-- ======================== partie équipe ================= -->
-		
-		<h3 class="text-center font-italic">Ajouter Equipe</h3>
-		<div class="row">
-		<form id="form_add_team" class="col">
-		  <div class="row">
-		    <div class="col">
-		      <input type="text" class="form-control form-control-sm" placeholder="team name" name="nom">
-		    </div>
-		    <div class="col">
-		      <input type="text" class="form-control form-control-sm" placeholder="stade name" name="stade">
-		    </div>
-		    <div class="col">
-		    	<div class="input-group form-control">
-					<!-- <div class="input-group-prepend">
-				    	<span class="input-group-text" id="">colors</span>
-				  	</div> -->
-				  	<input type="color" class="form-control form-control-sm" name="color1">
-				  	<input type="color" class="form-control form-control-sm" name="color2">
-				  	<input type="color" class="form-control form-control-sm" name="color3">
-				  	<input type="color" class="form-control form-control-sm" name="color4">
-				</div>
-		    </div>
-		  </div><br>
-		  <button class="btn btn-primary" id="add_team">submit</button>
-		</form>
-		<p> <span id="res_add_team"> </span></p>
-		</div><br>
+		<!-- ======================== graphe ================= -->
+		<?php require('canvas.php');	?>
+
 		<hr>
 	</div>
 
